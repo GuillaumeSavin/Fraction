@@ -1,0 +1,13 @@
+/root/RiderProjects/Fraction/Fraction/bin/Debug/netcoreapp3.1/Fraction
+/root/RiderProjects/Fraction/Fraction/bin/Debug/netcoreapp3.1/Fraction.deps.json
+/root/RiderProjects/Fraction/Fraction/bin/Debug/netcoreapp3.1/Fraction.runtimeconfig.json
+/root/RiderProjects/Fraction/Fraction/bin/Debug/netcoreapp3.1/Fraction.runtimeconfig.dev.json
+/root/RiderProjects/Fraction/Fraction/bin/Debug/netcoreapp3.1/Fraction.dll
+/root/RiderProjects/Fraction/Fraction/bin/Debug/netcoreapp3.1/Fraction.pdb
+/root/RiderProjects/Fraction/Fraction/obj/Debug/netcoreapp3.1/Fraction.csprojAssemblyReference.cache
+/root/RiderProjects/Fraction/Fraction/obj/Debug/netcoreapp3.1/Fraction.AssemblyInfoInputs.cache
+/root/RiderProjects/Fraction/Fraction/obj/Debug/netcoreapp3.1/Fraction.AssemblyInfo.cs
+/root/RiderProjects/Fraction/Fraction/obj/Debug/netcoreapp3.1/Fraction.csproj.CoreCompileInputs.cache
+/root/RiderProjects/Fraction/Fraction/obj/Debug/netcoreapp3.1/Fraction.dll
+/root/RiderProjects/Fraction/Fraction/obj/Debug/netcoreapp3.1/Fraction.pdb
+/root/RiderProjects/Fraction/Fraction/obj/Debug/netcoreapp3.1/Fraction.genruntimeconfig.cache
