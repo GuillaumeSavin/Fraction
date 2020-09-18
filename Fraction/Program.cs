@@ -27,7 +27,7 @@ namespace Fraction
             while (reste != 0)
             {
                 reste = num % den;
-                Console.WriteLine(num + " = " + den + " x " + (num/den) + " + " + reste);
+                //Console.WriteLine(num + " = " + den + " x " + (num/den) + " + " + reste);
                 if (num % den != 0)
                 {
                     num = den;
@@ -51,15 +51,92 @@ namespace Fraction
             get => denominator;
             set => denominator = value;
         }
+
+        public static Fraction operator +(Fraction fra, Fraction fra2)
+        {
+            int num = 0;
+            int den = 0;
+            
+            if (fra.denominator == fra2.denominator)
+            {
+                num = fra.numerator + fra2.numerator;
+                den = fra.denominator;
+            }
+            else
+            {
+                num = fra.numerator * fra2.denominator + fra2.numerator * fra.denominator;
+                den = fra.denominator * fra2.denominator;
+            }
+            
+            return new Fraction(num, den);
+        }
+        
+        public static Fraction operator +(Fraction fra, int integer)
+        {
+            int num = 0;
+            int den = 0;
+            
+            Fraction fra2 = new Fraction(integer, 1);
+            
+            if (fra.denominator == fra2.denominator)
+            {
+                num = fra.numerator + fra2.numerator;
+                den = fra.denominator;
+            }
+            else
+            {
+                num = fra.numerator * fra2.denominator + fra2.numerator * fra.denominator;
+                den = fra.denominator * fra2.denominator;
+            }
+            
+            return new Fraction(num, den);
+        }
+        
+        public static Fraction operator +(int integer, Fraction fra)
+        {
+            int num = 0;
+            int den = 0;
+            
+            Fraction fra2 = new Fraction(integer, 1);
+            
+            if (fra.denominator == fra2.denominator)
+            {
+                num = fra.numerator + fra2.numerator;
+                den = fra.denominator;
+            }
+            else
+            {
+                num = fra.numerator * fra2.denominator + fra2.numerator * fra.denominator;
+                den = fra.denominator * fra2.denominator;
+            }
+            
+            return new Fraction(num, den);
+        }
+
+        public override string ToString()
+        {
+            String str = "";
+
+            str = "(" + this.numerator + ", " + this.denominator + ")";
+            
+            return str;
+        }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Fraction test = new Fraction(4,2);
-            Console.WriteLine("(" + test.Numerator + "," + test.Denominator + ")");
-            Console.WriteLine("Hello World!");
-            
+            Fraction a = new Fraction();
+            Console.WriteLine(a);
+            Fraction b = new Fraction(2, -6);
+            Console.WriteLine(b);
+            Fraction c = new Fraction(8, 3);
+            a = b + c;
+            Console.WriteLine(a);
+            a = b + 3;
+            Console.WriteLine(a);
+            a = 7 + b;
+            Console.WriteLine(a);
         }
     }
 }
